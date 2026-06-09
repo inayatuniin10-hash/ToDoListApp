@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_hari_ini"
+        android:title="Hari Ini"
+        android:icon="@android:drawable/ic_menu_my_calendar"/>
+    <item
+        android:id="@+id/nav_jurnal"
+        android:title="Jurnal"
+        android:icon="?android:attr/listChoiceIndicatorMultiple"/>
+    <item
+        android:id="@+id/nav_tambah"
+        android:title="Tambah"
+        android:icon="@android:drawable/ic_menu_add"/>
+    <item
+        android:id="@+id/nav_profil"
+        android:title="Profil"
+        android:icon="?android:attr/fingerprintAuthDrawable"/>
+</menu>

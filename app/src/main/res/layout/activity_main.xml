@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FEF7F0"
+    tools:context=".MainActivity">
+
+    <!-- Header Aplikasi -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo_jadwalin"
+                android:layout_marginEnd="12dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To Do List"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#D4A5A5"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Atur harimu lebih baik"
+                    android:textSize="12sp"
+                    android:textColor="#8B6B6B"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="👤"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:background="@drawable/mood_bg"
+                android:padding="8dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Container untuk menampilkan Fragment (Bagian Tengah) -->
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Bottom Navigation Menu -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextColor="@color/bottom_nav_color"
+        android:background="@drawable/bottom_nav_bg" />
+
+</LinearLayout>
